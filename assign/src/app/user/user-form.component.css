@@ -24,3 +24,10 @@ table,td{
     text-align: left;
     border-bottom: 1px solid #05a931;
   }
+  .body{
+    font-family: sans-serif;
+    display: flex;
+  
+    min-height: 100vh;
+    background-color: burlywood;
+  }

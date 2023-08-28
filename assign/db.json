@@ -206,6 +206,15 @@
       "password": "shiv@123",
       "companies": "Wipro",
       "id": 23
+    },
+    {
+      "userName": "",
+      "MobileNo": "",
+      "email": "",
+      "Address": "",
+      "password": "",
+      "companies": "",
+      "id": 24
     }
   ]
 }

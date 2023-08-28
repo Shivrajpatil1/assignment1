@@ -25,3 +25,7 @@ border: hidden;
     width: 10%;
     padding: 10px 15px;
 }
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  

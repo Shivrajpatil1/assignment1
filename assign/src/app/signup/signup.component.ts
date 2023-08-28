@@ -26,12 +26,12 @@ export class SignupComponent {
   
   signupForm(){
     this.signUpForm = this.fb.group({
-      userName : [this.dataById ? this.dataById. userName:''],
-      MobileNo : [this.dataById ? this.dataById.MobileNo:''],
-      email:[this.dataById ? this.dataById.email:''],
-      Address:[this.dataById ? this.dataById.Address:''],
-      password:[this.dataById ? this.dataById.password:''],
-      companies: [this.dataById ? this.dataById.companies:'']
+      userName : [this.dataById ? this.dataById. userName:'',Validators.required],
+      MobileNo : [this.dataById ? this.dataById.MobileNo:'',Validators.required],
+      email:[this.dataById ? this.dataById.email:'',Validators.required],
+      Address:[this.dataById ? this.dataById.Address:'',Validators.required],
+      password:[this.dataById ? this.dataById.password:'',Validators.required],
+      companies: [this.dataById ? this.dataById.companies:'',Validators.required]
     })
   }
 

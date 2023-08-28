@@ -1,36 +1,48 @@
 <div class="div">
     <h2 class="h2">SignUp Form</h2>
     <div class="div2">
-        
+      
         <form [formGroup]="signUpForm" >
-            <!-- [formGroup]="signUpForm" -->
-            <label>User Name</label>&nbsp;
-            <input type="text" formControlName="userName">&nbsp;&nbsp;
+           
+            <mat-form-field>
+                <mat-label>username</mat-label>
+                <input matInput type="text" formControlName="userName">
+              </mat-form-field>&nbsp;
     
-            <label>Mobile No.</label> &nbsp;&nbsp;
-            <input type="text" formControlName="MobileNo"  ><br><br>
+     
+              
+              <mat-form-field>
+                <mat-label>Mobile No.</mat-label>
+                <input matInput type="text" formControlName="MobileNo">
+              </mat-form-field>
+
+              <mat-form-field>
+                <mat-label>Address</mat-label>
+                <input matInput type="text" formControlName="Address">
+              </mat-form-field>&nbsp;
+              
+                  <mat-form-field>
+                <mat-label>Email</mat-label>
+                <input matInput type="text" formControlName="email">
+              </mat-form-field>
+              
+              <mat-form-field>
+                <mat-label>Companies</mat-label>
+                <input matInput type="text" formControlName="companies">
+              </mat-form-field>&nbsp;
+              
+              <mat-form-field>
+                <mat-label>Password</mat-label>
+                <input matInput type="text" formControlName="password">
+              </mat-form-field><br><br>
+              
+
             
     
-            <label>Address</label>&nbsp;&nbsp;
-            <input type="text" formControlName="Address">&nbsp;&nbsp;
-    
-    
-            <label>Email Id</label>&nbsp;&nbsp;
-            <input type="text" formControlName="email"><br><br>
-    
-            
-            <label>Companies</label>&nbsp;&nbsp;
-            <input type="text" formControlName="companies">&nbsp;&nbsp;
-    
-    
-            <label>Password</label>&nbsp;&nbsp;
-            <input type="text" formControlName="password"><br><br>
-    
-            <button  (click)="submit()" [disabled]="!signUpForm.valid">{{this. editId ?
+            <button mat-raised-button color="primary" (click)="submit()" [disabled]="!signUpForm.valid">{{this. editId ?
                 'Update':'Submit'}}</button>
 
-            <!-- <button type="submit" class="btn" [disabled]="!hotelForm.valid" (click)="onSubmit()">{{this. editId ?
-                    'Update':'Submit'}}</button> -->
-        </form>
+           
+    </form>
     </div>
 </div>

@@ -1,7 +1,7 @@
 .div{
     
     background-color: darkkhaki;
-
+height: 1000px;
 }
 .h2{
     color: white;
@@ -9,9 +9,12 @@
 }
 
 .div2{
+ 
+   
+
 padding: 10px;
   background-color: cadetblue;
-  width: max-content;
+  width: 480px;
   border: solid rgb(107, 71, 71) 2px;
   display: block;
   margin-left: auto;
