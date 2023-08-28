@@ -1,0 +1,19 @@
+<div class="div1">
+
+  <h2 class="h2">LoginForm</h2>
+<div class="div2">
+    <form [formGroup]="loginForm" >
+        <mat-form-field>
+          <input matInput placeholder="Email Address" formControlName="email" required>
+        </mat-form-field><br><br>
+        <mat-form-field>
+          <input matInput type="password" placeholder="Password" formControlName="password" required>
+        </mat-form-field><br>
+        <button mat-raised-button color="primary" type="submit" (click)="submit()">Login</button>
+      </form>
+      
+</div>
+
+
+
+</div>

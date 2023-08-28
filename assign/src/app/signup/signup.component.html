@@ -1,0 +1,36 @@
+<div class="div">
+    <h2 class="h2">SignUp Form</h2>
+    <div class="div2">
+        
+        <form [formGroup]="signUpForm" >
+            <!-- [formGroup]="signUpForm" -->
+            <label>User Name</label>&nbsp;
+            <input type="text" formControlName="userName">&nbsp;&nbsp;
+    
+            <label>Mobile No.</label> &nbsp;&nbsp;
+            <input type="text" formControlName="MobileNo"  ><br><br>
+            
+    
+            <label>Address</label>&nbsp;&nbsp;
+            <input type="text" formControlName="Address">&nbsp;&nbsp;
+    
+    
+            <label>Email Id</label>&nbsp;&nbsp;
+            <input type="text" formControlName="email"><br><br>
+    
+            
+            <label>Companies</label>&nbsp;&nbsp;
+            <input type="text" formControlName="companies">&nbsp;&nbsp;
+    
+    
+            <label>Password</label>&nbsp;&nbsp;
+            <input type="text" formControlName="password"><br><br>
+    
+            <button  (click)="submit()" [disabled]="!signUpForm.valid">{{this. editId ?
+                'Update':'Submit'}}</button>
+
+            <!-- <button type="submit" class="btn" [disabled]="!hotelForm.valid" (click)="onSubmit()">{{this. editId ?
+                    'Update':'Submit'}}</button> -->
+        </form>
+    </div>
+</div>
